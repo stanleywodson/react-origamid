@@ -1,8 +1,10 @@
-function App() {
+export const App = () => {
 
   return (
-    <h1>Stanley Wodson</h1>
+    <div>
+      <h1>Stanley Wodson</h1>
+      <p>More one text in side this place</p>
+    </div>
   )
 }
 
-export default App
