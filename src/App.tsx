@@ -8,7 +8,6 @@ export const App = () => {
   return (
     <BrowserRouter>
       <ThemeProvider theme={defaultTheme}>
-        <h1>Stanley Wodson</h1>
         <AppRoutes />
         <GlobalStyle />
       </ThemeProvider>
