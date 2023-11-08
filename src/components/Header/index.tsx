@@ -6,7 +6,7 @@ export const Header = () => {
   return (
     <HeaderContainer>
       <span>
-        <ArrowFatLineRight size={30} />
+        <ArrowFatLineRight size={30} color="#1FF3D6" />
       </span>
       <nav>
         <NavLink to="/" title="Timer">
