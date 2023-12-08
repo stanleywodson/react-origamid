@@ -3,10 +3,14 @@ version: "3.7"
 services:
   react-app:
     container_name: react-dev
-    build:
-      context: .
-      dockerfile: Dockerfile
+    image: node
+    # build:
+    #   context: .
+    #   dockerfile: Dockerfile
+    working_dir: /usr/src/app
+    tty: true
+    volumes:
+      - .:/usr/src/app
     ports:
       - "3000:3000"
-    volumes:
-      - ./src:/app/src
+    command: npm run dev
