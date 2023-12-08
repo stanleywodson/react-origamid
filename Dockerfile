@@ -17,13 +17,11 @@ WORKDIR /app
 
 COPY --from=BUILD_IMAGE /app/dist/ /app/dist/
 
-EXPOSE 8081
-
 COPY package.json .
 COPY vite.config.ts .
 
 RUN npm install typescript
 
-EXPOSE 8081
+FROM nginx
 
-CMD [ "npm", "run", "preview" ]
+COPY --from=PRODUCTION_IMAGE /app/dist/ /usr/share/nginx/html
