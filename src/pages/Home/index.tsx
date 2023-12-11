@@ -37,7 +37,7 @@ export const Home = () => {
     },
   })
 
-  const handleCreateNewCycle = (data: any) => {
+  const handleCreateNewCycle = (data: NewCycleFormData) => {
     console.log(data)
   }
 
